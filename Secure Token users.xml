@@ -2,30 +2,30 @@
 <displayName>Secure Token users</displayName>
 <description/>
 <dataType>string</dataType>
-<scriptContentsMac>#!/bin/bash&#13;
-&#13;
-declare -a secureTokens&#13;
-declare -a delete&#13;
-&#13;
-&#13;
-secureTokens=($(fdesetup list -extended | awk '{print $4}'))&#13;
-&#13;
-#echo ${secureTokens[@]}&#13;
-&#13;
-delete+=(USER)&#13;
-delete+=(Record)&#13;
-&#13;
-#echo ${delete[@]}&#13;
-&#13;
-for i in ${delete[@]}; do&#13;
-secureTokens=( "${secureTokens[@]/$i}" )&#13;
-done&#13;
-&#13;
-#echo ${secureTokens[@]}&#13;
-&#13;
-function join { local IFS="$1"; shift; echo "$*"; }&#13;
-&#13;
-result=$(join , ${secureTokens[@]})&#13;
-&#13;
-echo "&lt;result&gt;$result&lt;/result&gt;"</scriptContentsMac>
+<scriptContentsMac>#!/bin/bash
+
+declare -a secureTokens
+declare -a delete
+
+
+secureTokens=($(fdesetup list -extended | awk '{print $4}'))
+
+#echo ${secureTokens[@]}
+
+delete+=(USER)
+delete+=(Record)
+
+#echo ${delete[@]}
+
+for i in ${delete[@]}; do
+secureTokens=( "${secureTokens[@]/$i}" )
+done
+
+#echo ${secureTokens[@]}
+
+function join { local IFS="$1"; shift; echo "$*"; }
+
+result=$(join , ${secureTokens[@]})
+
+echo "<result>$result</result>"</scriptContentsMac>
 </extensionAttribute>
