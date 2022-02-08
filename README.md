@@ -1,6 +1,9 @@
 How to use: Download the 3 .xml files from this repo & Navigate to your Jamf Pro Server, path to upload is below.
 
 All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
+
+Recommended Workflow: macOS 11.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro (Server Version of 10.18+), Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
+
 _____________________________________________________________________________________________________
 
 
@@ -24,8 +27,6 @@ macOS Catalina (10.15.4+)
 
 macOS Big Sur (11.0.1+)
 - Local Standard Accounts created outside of the setup assistant do get a SecureToken. 
-
-Recommended Workflow: macOS 11.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro (Server Version of 10.18+), Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
 
 _____________________________________________________________________________________________________
 Good Reads
