@@ -1,4 +1,6 @@
-How to use: Download the 3 .xml files from this repo & Navigate to your Jamf Pro Server, path to upload is below.
+*How to use*
+
+Download the 3 .xml files from this repo & Navigate to your Jamf Pro Server, path to upload is below.
 
 All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
 
@@ -8,6 +10,7 @@ If older version of macOS - Upgrade to macOS Monterey 12.0.1+ & then you can upg
 
 _____________________________________________________________________________________________________
 
+*About*
 
 In order to update macOS Monterey 12.0.1 or later via an MDM utilizing Apples newly introduced 'InstallLater' MDM Command, a bootstrap token must be escrowed to the MDM Server.
 
@@ -17,7 +20,7 @@ To determine the Escrow status of a Bootstrap Token I've included 3 Extension At
 _____________________________________________________________________________________________________
 
 
-How to Obtain a SecureToken in order to escrow the Bootstrap Token?
+*How to Obtain a SecureToken in order to escrow the Bootstrap Token?*
 
 Requirements: Automated Device Enrollment (Formerly DEP) & MDM (Jamf)
 
@@ -31,7 +34,9 @@ macOS Big Sur (11.0.1+)
 - Local Standard Accounts created outside of the setup assistant do get a SecureToken. 
 
 _____________________________________________________________________________________________________
-Good Reads
+
+
+*Good Reads*
 
 https://docs.jamf.com/technical-articles/Manually_Leveraging_Apples_Bootstrap_Token_Functionality.html
 https://support.apple.com/guide/deployment/use-secure-and-bootstrap-tokens-dep24dbdcf9e/web
