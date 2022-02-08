@@ -4,7 +4,7 @@ All Settings -> Computer Management (Management Framework) -> Extension Attribut
 
 Recommended Workflow: macOS 12.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro, Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
 
-If macOS 11.0.1+ (or 10.15.4+ w/ End User Admin Account) - Upgrade to macOS Monterey 12.0.1+ & then you can upgrade with MDM Deferal Command.
+If older version of macOS - Upgrade to macOS Monterey 12.0.1+ & then you can upgrade with MDM Deferal Command.
 
 _____________________________________________________________________________________________________
 
