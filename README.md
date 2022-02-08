@@ -1,6 +1,8 @@
-How to use: Download the 3 .xml files & then Navigate to your Jamf Pro Server
-_____________________________________________________________________________________________________
+How to use: Download the 3 .xml files from this repo & Navigate to your Jamf Pro Server, follow the breadcrumbs laid out below.
+
 All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
+_____________________________________________________________________________________________________
+
 
 In order to update macOS Monterey 12.0.1 or later via an MDM utilizing Apples newly introduced 'InstallLater' MDM Command, a bootstrap token must be escrowed to the MDM Server.
 
