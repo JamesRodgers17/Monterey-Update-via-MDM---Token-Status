@@ -2,9 +2,20 @@
 
 In order to update macOS Monterey 12.0.1 or later via an MDM utilizing Apples newly introduced 'InstallLater' MDM Command, a bootstrap token must be escrowed to the MDM Server.
 
-To determine the Escrow status of a Bootstrap Token I've included 3 Extension Attributes. One to determine the Bootstrap Token escrow status, a second to determine the SecureToken holder status & a third if the SecureToken holder is unknown. 
-(I did not write these from scratch - credit is not mine)
+To determine the Escrow status of a Bootstrap Token I've included 3 Extension Attributes. 
 
+*Bootstrap.xml*
+- Determines the escrowed status of the Bootstrap Token
+
+*Secure Token users.xml*
+- Determines if the Mac has SecureToken enabled Users
+- Displays SecureToken enabled Username(s)
+- These users can escrow the Bootstrap Token
+
+*Secure Token users w_Unknown.xml*
+- Determines is the SecureToken enabled User is accessible or not
+- Displays "Unknown Secure Token Holders" if 
+- Displays SecureToken enabled Username(s) if Known
 _____________________________________________________________________________________________________
 
 **How to use**
@@ -13,7 +24,12 @@ Download the 3 .xml files from this repo & Navigate to your Jamf Pro Server, pat
 
 All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
 
-Recommended Workflow: macOS 12.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro, Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
+*Recommended Workflow*
+- macOS 12.0.1+ 
+- enrolled via ADE using Prestage Enrollment via Jamf Pro
+- Filevault Configuration Profile pushed for First Login
+- End User Graphically logs in 
+- SecureToken is granted & Bootstrap token is escrowed.
 
 If older version of macOS - Upgrade to macOS Monterey 12.0.1+ & then you can upgrade with MDM Deferal Command.
 
