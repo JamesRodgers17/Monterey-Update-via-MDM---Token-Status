@@ -1,7 +1,10 @@
+How to use: Download the 3 .xml files & then Navigate to your Jamf Pro Server
+_____________________________________________________________________________________________________
+All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
+
 In order to update macOS Monterey 12.0.1 or later via an MDM utilizing Apples newly introduced 'InstallLater' MDM Command, a bootstrap token must be escrowed to the MDM Server.
 
 To determine the Escrow status of a Bootstrap Token I've included 3 Extension Attributes. One to determine the Bootstrap Token escrow status, a second to determine the SecureToken holder status & a third if the SecureToken holder is unknown. (I did not write these from scratch - credit is not mine)
-
 
 Good Reads
 _____________________________________________________________________________________________________
