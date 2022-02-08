@@ -2,7 +2,9 @@ How to use: Download the 3 .xml files from this repo & Navigate to your Jamf Pro
 
 All Settings -> Computer Management (Management Framework) -> Extension Attributes -> Upload
 
-Recommended Workflow: macOS 11.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro (Server Version of 10.18+), Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
+Recommended Workflow: macOS 12.0.1+ enrolled via ADE using Prestage Enrollment via Jamf Pro, Filevault Configuration Profile is Pushed, End User Graphically logs in, SecureToken is granted & Bootstrap token is escrowed.
+
+If macOS 11.0.1+ (or 10.15.4+ w/ End User Admin Account) - Upgrade to macOS Monterey 12.0.1+ & then you can upgrade with MDM Deferal Command.
 
 _____________________________________________________________________________________________________
 
