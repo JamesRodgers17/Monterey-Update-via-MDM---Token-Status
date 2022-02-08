@@ -9,15 +9,14 @@ To determine the Escrow status of a Bootstrap Token I've included 3 Extension At
 
 
 *Secure Token users.xml*
-- Determines if the Mac has a SecureToken enabled User(s)
+- Determines SecureToken enabled User(s)
 - Displays SecureToken enabled Username(s)
-- These users can escrow the Bootstrap Token
-
+- User(s) can escrow the Bootstrap Token
 
 
 *Secure Token users w_Unknown.xml*
-- Determines is the SecureToken enabled User is accessible or not
-- Displays "Unknown Secure Token Holders" if 
+- Determines SecureToken enabled User(s)
+- Displays "Unknown Secure Token Holders" if Unknown
 - Displays SecureToken enabled Username(s) if Known
 _____________________________________________________________________________________________________
 
