@@ -7,10 +7,13 @@ To determine the Escrow status of a Bootstrap Token I've included 3 Extension At
 *Bootstrap.xml*
 - Determines the escrowed status of the Bootstrap Token
 
+
 *Secure Token users.xml*
-- Determines if the Mac has SecureToken enabled Users
+- Determines if the Mac has SecureToken enabled User(s)
 - Displays SecureToken enabled Username(s)
 - These users can escrow the Bootstrap Token
+
+
 
 *Secure Token users w_Unknown.xml*
 - Determines is the SecureToken enabled User is accessible or not
@@ -26,9 +29,9 @@ All Settings -> Computer Management (Management Framework) -> Extension Attribut
 
 *Recommended Workflow*
 - macOS 12.0.1+ 
-- enrolled via ADE using Prestage Enrollment via Jamf Pro
-- Filevault Configuration Profile pushed for First Login
-- End User Graphically logs in 
+- Enrolled via ADE using Prestage Enrollment via Jamf Pro
+- Filevault Configuration Profile pushed during enrollment & enabled at First Login
+- End User Graphically Logs in
 - SecureToken is granted & Bootstrap token is escrowed.
 
 If older version of macOS - Upgrade to macOS Monterey 12.0.1+ & then you can upgrade with MDM Deferal Command.
